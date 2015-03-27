@@ -1,0 +1,63 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.buttons.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:background="@drawable/button_1"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="150dip"
+        android:text="Deleted Contacts"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dip"
+        android:onClick="delete">
+    </Button>
+
+    <Button
+        android:id="@+id/TopCalled"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:background="@drawable/button_1"
+        android:textColor="@android:color/white"
+        android:text="Most Called"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/delete"
+        android:layout_marginBottom="20dip"
+        android:onClick="topcalled">
+    </Button>
+    
+    <Button
+        android:id="@+id/Browsing"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:background="@drawable/button_1"
+        android:textColor="@android:color/white"
+        android:text="Most Visited Websites"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/TopCalled"
+        android:layout_marginBottom="20dip"
+        android:onClick="browsing">
+        
+    </Button>
+
+    
+    <Button
+        android:id="@+id/back"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_1"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/Browsing"
+        android:text="Back" 
+        android:onClick="backtomain">
+    </Button>
+
+</RelativeLayout>
